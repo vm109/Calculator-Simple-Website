@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="container-fluid bg-light calculator border border-secondary rounded">
+      <div class="row result">
+        <div class="result col-sm-12 float-right" id="resultScreen">
+          0
+          </div>
+        </div>
+        <div class="row">
+           <button type="button" class="col-md-3 border rounded btn btn-danger" id="cancelButton">
+             cancel
+          </button>
+           <button type="button"  value="1" class="col-md-3 border rounded btn btn-secondary" onclick="registerNumber(value)">
+            1
+           </button>
+          <button  type="button" value="2" class="col-md-3 border rounded btn btn-secondary" onclick="registerNumber(value)">
+            2
+          </button>
+          <button type="button" value="3" class="col-md-3 border rounded btn btn-secondary" onclick="registerNumber(value)">
+            3
+          </button>
+        </div>
+
+      <div class="row">
+         <button type="button" value="4" class="col-md-3 border rounded btn btn-secondary" onclick="registerNumber(value)">
+           4
+        </button>
+         <button  type="button" value="5" class="col-md-3 border rounded btn btn-secondary" onclick="registerNumber(value)">
+          5
+         </button>
+        <button type="button" value="6" class="col-md-3 border rounded btn btn-secondary" onclick="registerNumber(value)">
+          6
+        </button>
+        <button type="button" value="7" class="col-md-3 border rounded btn btn-secondary" onclick="registerNumber(value)">
+          7
+        </button>
+    </div>
+
+    <div class="row">
+       <button type="button" value="8" class="col-md-3 border rounded btn btn-secondary" onclick="registerNumber(value)">
+         8
+      </button>
+       <button type="button" value="9" class="col-md-3 border rounded btn btn-secondary" onclick="registerNumber(value)">
+        9
+       </button>
+      <button type="button" value="0" class="col-md-3 border rounded btn btn-secondary" onclick="registerNumber(value)">
+        0
+      </button>
+      <button class="col-md-3 border rounded btn btn-primary" onclick="getResult()">
+        enter
+      </button>
+      </div>
+
+  <div class="row">
+     <button type="button"  value="+" class="col-md-3 border rounded btn btn-info" onclick="registerOperation(value)">
+       +
+    </button>
+     <button type="button" value="-" class="col-md-3 border rounded btn btn-info" onclick="registerOperation(value)">
+      -
+     </button>
+    <button type="button" value="*" class="col-md-3 border rounded btn btn-info" onclick="registerOperation(value)">
+      *
+    </button>
+    <button type="button" value="/" class="col-md-3 border rounded btn btn-info" onclick="registerOperation(value)">
+      /
+    </button>
+    </div>
+</div>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="javascript/calculatorOperations.js"></script>
+      <script src="javascript/calculations.js"></script>
+  </body>
+</html>

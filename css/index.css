@@ -1,0 +1,17 @@
+/*############# CLASS SELCTORS ########*/
+
+
+.calculator{
+  text-align: right;
+  padding: 5%;
+}
+
+.result{
+  height: 15%;
+  font-family: monospace;
+  font-size: 12vh;
+}
+
+.row{
+  height: 15%;
+}
